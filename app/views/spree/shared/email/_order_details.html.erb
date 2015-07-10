@@ -15,7 +15,7 @@
   <% else %>
     <tr>
       <td>Submitted</td>
-      <td><%= l(order.completed_at.to_date, format: :short) %></td>
+      <td><%= l(order.completed_at.to_date, format: :short)  if order.completed_at %></td>
     </tr>
   <% end %>
 </table>
