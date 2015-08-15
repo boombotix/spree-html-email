@@ -6,8 +6,6 @@
 </p>
 <p class="link">
   <%= Spree.t('shipment_mailer.shipped_email.instructions') %>
-  To view the complete details of your order use the following link:
-  <%= link_to(order_url(@shipment.order, host: Spree::Store.current.url), order_url(@shipment.order, host: Spree::Store.current.url)) %>
 </p>
 <p>&nbsp;</p>
 
